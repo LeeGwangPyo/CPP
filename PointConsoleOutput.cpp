@@ -12,10 +12,10 @@ public:
 	{
 		std::cout << '[' << xpos << ', ' << ypos << ']' << std::endl;
 	}
-	friend ostream& operator<<(ostream& os, const Point& pos);
+	friend ostream& operator<<(ostream& , const Point&);
 };
 
-ostream& operator<<(ostream& os, const Point pos)
+ostream& operator<<(ostream& os, const Point& pos)
 {
 	os << '[' << pos.xpos << ", " << pos.ypos << ']' << std::endl;
 	return os;
